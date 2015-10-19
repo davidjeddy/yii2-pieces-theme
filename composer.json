@@ -1,22 +1,17 @@
-
 {
-	"name": "davidjeddy/pices-theme",
-	"description": "Pieces Theme",
-	"keywords": ["theme", "deavidjeddy", "yii2"],
-	"type": "yii2-extension",
-	"authors": [
-		{
-			"name": "David J Eddy",
-			"email": "me@davidjdeddy.com"
-		}
-	],
-	"require": {
-		"yiisoft/yii2": "*",
-		"bower-asset/font-awesome": "*"
-	},
-	"autoload": {
-		"psr-4": {
-			"davidjeddy\\src\\": ""
-		}
-	}
+    "name": "davidjeddy/pices-theme",
+    "description": "Pieces Theme",
+    "keywords": ["theme", "deavidjeddy", "yii2"],
+    "type": "yii2-extension",
+    "authors": [
+        {
+            "name": "David J Eddy",
+            "email": "me@davidjdeddy.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "davidjeddy\\src\\": ""
+        }
+    }
 }
