@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "davidjeddy\\src\\": ""
+            "davidjeddy\\pieces\\": "/src"
         }
     }
 }
