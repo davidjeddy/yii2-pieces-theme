@@ -1,8 +1,9 @@
 {
-    "name": "davidjeddy/yii2-pices-theme",
+    "name": "davidjeddy/yii2-pieces-theme",
     "description": "Pieces Theme",
     "keywords": ["theme", "deavidjeddy", "yii2"],
-    "type": "yii2-extension",
+    "type": "theme",
+    "version": "0.0.5",
     "authors": [
         {
             "name": "David J Eddy",
