@@ -1,7 +1,7 @@
-pieces-theme
+yii2-pieces-theme
 =========
 
-yii2 Custom Theme
+yii2 Custom Theme for pieces-compendium.com
 
 
 Credit
@@ -19,13 +19,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist davidjeddy/pieces-theme "*"
+php composer.phar require --prefer-dist davidjeddy/yii2-pieces-theme "*"
 ```
 
 or add
 
 ```
-"davidjeddy/pieces-theme": "*"
+"davidjeddy/yii2-pieces-theme": "*"
 ```
 
 to the require section of your `composer.json` file.
