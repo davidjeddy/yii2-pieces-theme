@@ -27,3 +27,14 @@
     /* custom max width */
     max-width:320px;
 }
+html body div.container-fluid.wrap div.col-lg-2.col-md-1.hidden-xs.hidden-s {
+    background-color: #123;
+}
+
+html body div.container-fluid.wrap div.col-lg-8.col-md-10.col-sm-12.cols-xs-12 {
+    background-color: #456;
+}
+
+html body div.container-fluid.wrap div.col-lg-2.col-md-1.hidden-xs.hidden-s {
+    background-color: #789;
+}
