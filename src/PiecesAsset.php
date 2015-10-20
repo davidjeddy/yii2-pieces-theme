@@ -5,20 +5,20 @@ namespace davidjeddy\pieces;
 use yii\web\AssetBundle;
 
 /**
- * @author Qiang Xue <qiang.xue@gmail.com>
- * @since 2.0
+ * @author David Eddy <me@davidjeddy.com>
+ * @since 0.0.5
  */
 class PiecesAsset extends AssetBundle
 {
-    public $basePath = '@webroot';
-    public $baseUrl = '@web';
+    public $basePath = '@webroot/themes/pieces/assets/';
+    public $baseUrl = '@web/themes/pieces/assets/';
 
     public $css = [
-        'css/pices.css',
+        'css/pieces.css',
     ];
 
     public $js = [
-        'js/pices.js',
+        'js/pieces.js',
     ];
 
     public $depends = [

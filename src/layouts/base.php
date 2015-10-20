@@ -7,14 +7,22 @@ use yii\bootstrap\NavBar;
 /* @var $content string */
 
 $this->beginContent('@frontend/views/layouts/_clear.php')
+
 ?>
 <div class="wrap">
 
-    <div id="headerBanner">
-        <h1>asdf</h1>
+    <div class="container">
+        <div class="row row-centered">
+            <div class="col-xs-6 col-centered">1</div>
+            <div class="col-xs-6 col-centered">2</div>
+            
+            <div class="col-xs-3 col-centered">3</div>
+            <div class="col-xs-3 col-centered">4</div>
+            <div class="col-xs-3 col-centered">5</div>
+        </div>
     </div>
 
-    <?php
+    <?php /*
     NavBar::begin([
         'brandLabel' => Yii::$app->name,
         'brandUrl'   => Yii::$app->homeUrl,
@@ -66,10 +74,11 @@ $this->beginContent('@frontend/views/layouts/_clear.php')
                         'active' => Yii::$app->language === $code
                     ];
                 }, array_keys(Yii::$app->params['availableLocales']))
-            ] */
+            ] *
         ]
     ]);
     NavBar::end();
+    */
     ?>
 
     <?php echo $content ?>
@@ -79,7 +88,8 @@ $this->beginContent('@frontend/views/layouts/_clear.php')
 <footer class="footer">
     <div class="container">
         <p class="pull-left">&copy; <?php echo \Yii::$app->params['companyName']; ?>, <?php echo date('Y') ?></p>
-        <p class="pull-right"><?php echo Yii::powered() ?></p>
+        <p class="pull-right"><?php // echo Yii::powered() ?></p>
     </div>
 </footer>
+
 <?php $this->endContent() ?>
