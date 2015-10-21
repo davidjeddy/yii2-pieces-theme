@@ -2,39 +2,80 @@
  * Pieces Compendium CSS
  */
 
-/* centered columns styles */
-.row-centered {
-    text-align:center;
-}
-.col-centered {
-    display:inline-block;
-    float:none;
-    /* reset the text-align */
-    text-align:left;
-    /* inline-block space fix */
-    margin-right:-4px;
+/* global */
+body {
+    background-image: url(../images/body-bkg.png);
 }
 
-.col-fixed {
-    /* custom width */
-    width:320px;
-}
-.col-min {
-    /* custom min width */
-    min-width:320px;
-}
-.col-max {
-    /* custom max width */
-    max-width:320px;
-}
-html body div.container-fluid.wrap div.col-lg-2.col-md-1.hidden-xs.hidden-s {
-    background-color: #123;
+.container-fluid {
+    background-attachment: fixed;
+    background-image     : url(../images/body-bkg.png);
+    background-position  : center;
+    background-repeat    : no-repeat;
+    background-size      : 100% 100%;
+    height               : 100%;
+    min-height           : 100%;
 }
 
-html body div.container-fluid.wrap div.col-lg-8.col-md-10.col-sm-12.cols-xs-12 {
-    background-color: #456;
+/* top banner (not navibar) */
+
+.banner-container {
+    min-height: 230px;
+    background-image     : url(../images/header-banner-bkg.png);
+    background-position  : center;
+    background-repeat    : no-repeat;
 }
 
-html body div.container-fluid.wrap div.col-lg-2.col-md-1.hidden-xs.hidden-s {
-    background-color: #789;
+.l-side-banner, .l-side-banner {
+    background-image     : url(../images/top-left-extra.png);
+    background-position  : left top;
+    background-repeat    : no-repeat;
+    height: 230px;
+}
+
+.m-banner {
+    /*background-image     : url(../images/top-banner-name.png);
+    background-position  : center;
+    background-repeat    : no-repeat;*/
+    height: 230px;
+}
+
+.r-side-banner {
+    background-image     : url(../images/top-right-extra.png);
+    background-position  : right top;
+    background-repeat    : no-repeat;
+    height: 230px;
+}
+
+/* nav bar */
+
+.navbar {
+    background-color: #000;
+    border-radius   : 0px;
+    margin-bottom   : 0px;
+}
+
+/* content */
+
+.l-side-content, .r-side-content {
+    height          : 100%;
+    min-height      : 100%;
+    background-image: url(../images/left-bars.png);
+}
+
+.m-content {
+
+}
+
+.r-side-content {
+    background-image: url(../images/right-bars.png);
+}
+
+/* footer */
+
+.footer {
+    background-color: #000;
+    bottom          : 0;
+    height          : 200px;
+    width           : 100%;
 }

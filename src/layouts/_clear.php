@@ -6,8 +6,6 @@ use yii\helpers\Html;
 /* @var $content string */
 
 \frontend\assets\FrontendAsset::register($this);
-\davidjeddy\pieces\PiecesAsset::register($this);
-
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>

@@ -6,9 +6,21 @@ use yii\bootstrap\NavBar;
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-$this->beginContent('@frontend/views/layouts/_clear.php')
+$piecesAsset = \davidjeddy\pieces\PiecesAsset::register($this);
+
+$this->beginContent('@frontend/views/layouts/_clear.php');
+
 ?>
 <div class="container-fluid wrap">
+
+    <div class="banner-container">
+        <div class="col-lg-3 col-md-2 hidden-sm hidden-xs   l-side-banner"></div>
+        <div class="col-lg-6 col-md-8 col-sm-12 cols-xs-12  m-banner">
+            <!-- <img src="<?= $piecesAsset->baseUrl; ?>/images/top-banner-name.png" class="img-responsive" alt="Pieces" /> -->
+        </div>
+        <div class="col-lg-3 col-md-2 hidden-sm hidden-xs   r-side-banner"></div>
+    </div>
+
     <?php 
     NavBar::begin([
         // 'brandLabel' => Yii::$app->name,
@@ -64,9 +76,9 @@ $this->beginContent('@frontend/views/layouts/_clear.php')
     ]); ?>
     <?php NavBar::end(); ?>
 
-    <div class="col-lg-2 col-md-1 hidden-sm hidden-xs">Left</div>
-    <div class="col-lg-8 col-md-10 col-sm-12 cols-xs-12"><?php echo $content ?></div>
-    <div class="col-lg-2 col-md-1 hidden-sm hidden-xs">Right</div>
+    <div class="col-lg-2 col-md-1 hidden-sm hidden-xs l-side-content"   style="background-color:#456">Left</div>
+    <div class="col-lg-8 col-md-10 col-sm-12 cols-xs-12 m-content"      style="background-color:#567"><?php echo $content ?></div>
+    <div class="col-lg-2 col-md-1 hidden-sm hidden-xs r-side-content"   style="background-color:#789">Right</div>
 
 </div>
 
@@ -76,4 +88,5 @@ $this->beginContent('@frontend/views/layouts/_clear.php')
         <p class="pull-right"><?php echo Yii::powered() ?></p>
     </div>
 </footer>
+
 <?php $this->endContent() ?>
