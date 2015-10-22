@@ -5,7 +5,7 @@
 /* global */
 body {
     background-image: url(../images/body-bkg.png);
-    color: #def;
+    color: #999;
 }
 
 .container-fluid {
@@ -36,9 +36,9 @@ body {
 }
 
 .m-banner {
-    /*background-image     : url(../images/top-banner-name.png);
+    background-image     : url(../images/top-banner-name.png);
     background-position  : center;
-    background-repeat    : no-repeat;*/
+    background-repeat    : no-repeat;
     height: 230px;
 }
 
@@ -62,8 +62,25 @@ body {
 
 /* content */
 
+.breadcrumb {
+    background-color: #000;
+    border-radius   : 0px !important;
+    list-style      : outside none none;
+    padding         : 15px 0px;
+}
+
+.breadcrumb a{
+    color: #999;
+    text-decoration: underline;
+    min-width: 100% !important;
+}
+
+ul.breadcrumb li.active {
+    color: #999;
+}
+
 .l-side-content, .r-side-content {
-    background-image: url(../images/left-bars.png);
+    /* background-image: url(../images/left-bars.png); */ 
     /* height          : 100%;
     min-height      : 100%; */
     min-height: 1024px;
@@ -74,23 +91,18 @@ body {
 }
 
 .r-side-content {
-    background-image: url(../images/right-bars.png);
+    /* background-image: url(../images/right-bars.png); */
 }
 
 /* footer */
 
 .footer {
     background-color: #000 !important;
+    /* background-image: url(../images/header-banner-bkg.png); */
     border-top      : 0px  !important;
     bottom          : 0px;
     min-height      : 200px !important;
     width           : 100%;
-
-    /* some fancy here */
-    background-image   : url(../images/header-banner-bkg.png);
-    -ms-transform: rotate(180deg); /* IE 9 */
-    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-    transform: rotate(180deg);
 }
 
 /* specials */
@@ -110,6 +122,17 @@ body {
     background-color: rgb(0, 0, 0);
     /* RGBa with 0.6 opacity */
     background-color: rgba(0, 0, 0, 0.6);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+.alpha75 {
+    /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.75);
     /* For IE 5.5 - 7*/
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
     /* For IE 8*/

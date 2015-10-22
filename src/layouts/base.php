@@ -13,9 +13,9 @@ $this->beginContent('@frontend/views/layouts/_clear.php');
 ?>
 <div class="container-fluid wrap">
 
-    <div class="banner-container">
+    <div class="banner-container hidden-xs">
         <div class="col-lg-3 hidden-md hidden-sm hidden-xs   l-side-banner"></div>
-        <div class="col-lg-6 col-md-12 col-sm-12 cols-xs-12  m-banner">
+        <div class="col-lg-6 col-md-12 col-sm-12 m-banner">
             <!-- <img src="<?= $piecesAsset->baseUrl; ?>/images/top-banner-name.png" class="img-responsive" alt="Pieces" /> -->
         </div>
         <div class="col-lg-3 hidden-md hidden-sm hidden-xs   r-side-banner"></div>
@@ -28,7 +28,7 @@ $this->beginContent('@frontend/views/layouts/_clear.php');
         'options'    => ['class' => 'navbar-inverse'],
     ]);
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
+        'options' => ['class' => 'navbar-nav'],
         'items' => [
             // ['label' => Yii::t('frontend', 'Home'),      'url' => ['/site/index']],
             // ['label' => Yii::t('frontend', 'About'),     'url' => ['/page/view', 'slug'=>'about']],
@@ -78,7 +78,7 @@ $this->beginContent('@frontend/views/layouts/_clear.php');
 
     <div class="content-container">
         <div class="col-lg-2 col-md-1 hidden-sm hidden-xs l-side-content"       ></div>
-        <div class="col-lg-8 col-md-10 col-sm-12 cols-xs-12 m-content alpha30"  ><?php echo $content ?></div>
+        <div class="col-lg-8 col-md-10 col-sm-12 cols-xs-12 m-content alpha60"  ><?php echo $content ?></div>
         <div class="col-lg-2 col-md-1 hidden-sm hidden-xs r-side-content"       ></div>
     </div>
 
