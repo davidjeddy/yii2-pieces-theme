@@ -5,6 +5,7 @@
 /* global */
 body {
     background-image: url(../images/body-bkg.png);
+    color: #def;
 }
 
 .container-fluid {
@@ -20,17 +21,18 @@ body {
 /* top banner (not navibar) */
 
 .banner-container {
-    min-height: 230px;
-    background-image     : url(../images/header-banner-bkg.png);
-    background-position  : center;
-    background-repeat    : no-repeat;
+    background-image   : url(../images/header-banner-bkg.png);
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : 100% 100%;
+    min-height         : 230px;
 }
 
 .l-side-banner, .l-side-banner {
-    background-image     : url(../images/top-left-extra.png);
-    background-position  : left top;
-    background-repeat    : no-repeat;
-    height: 230px;
+    background-image   : url(../images/top-left-extra.png);
+    background-position: left top;
+    background-repeat  : no-repeat;
+    height             : 230px;
 }
 
 .m-banner {
@@ -41,30 +43,34 @@ body {
 }
 
 .r-side-banner {
-    background-image     : url(../images/top-right-extra.png);
-    background-position  : right top;
-    background-repeat    : no-repeat;
-    height: 230px;
+    background-image   : url(../images/top-right-extra.png);
+    background-position: right top;
+    background-repeat  : no-repeat;
+    height             : 230px;
 }
 
 /* nav bar */
 
 .navbar {
-    background-color: #000;
-    border-radius   : 0px;
-    margin-bottom   : 0px;
+    background-image   : url(../images/mehu-bkg.png);
+    background-position: top left;
+    background-repeat  : repeat-x;
+    background-size    : 100% 100%;
+    border-radius      : 0px;
+    margin-bottom      : 0px; 
 }
 
 /* content */
 
 .l-side-content, .r-side-content {
-    height          : 100%;
-    min-height      : 100%;
     background-image: url(../images/left-bars.png);
+    /* height          : 100%;
+    min-height      : 100%; */
+    min-height: 1024px;
+
 }
 
 .m-content {
-
 }
 
 .r-side-content {
@@ -74,8 +80,49 @@ body {
 /* footer */
 
 .footer {
-    background-color: #000;
-    bottom          : 0;
-    height          : 200px;
+    background-color: #000 !important;
+    border-top      : 0px  !important;
+    bottom          : 0px;
+    min-height      : 200px !important;
     width           : 100%;
+
+    /* some fancy here */
+    background-image   : url(../images/header-banner-bkg.png);
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+/* specials */
+.alpha30 {
+    /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.3);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+.alpha60 {
+    /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+.alpha90 {
+    /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 }

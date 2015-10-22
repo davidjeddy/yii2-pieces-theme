@@ -14,11 +14,11 @@ $this->beginContent('@frontend/views/layouts/_clear.php');
 <div class="container-fluid wrap">
 
     <div class="banner-container">
-        <div class="col-lg-3 col-md-2 hidden-sm hidden-xs   l-side-banner"></div>
-        <div class="col-lg-6 col-md-8 col-sm-12 cols-xs-12  m-banner">
+        <div class="col-lg-3 hidden-md hidden-sm hidden-xs   l-side-banner"></div>
+        <div class="col-lg-6 col-md-12 col-sm-12 cols-xs-12  m-banner">
             <!-- <img src="<?= $piecesAsset->baseUrl; ?>/images/top-banner-name.png" class="img-responsive" alt="Pieces" /> -->
         </div>
-        <div class="col-lg-3 col-md-2 hidden-sm hidden-xs   r-side-banner"></div>
+        <div class="col-lg-3 hidden-md hidden-sm hidden-xs   r-side-banner"></div>
     </div>
 
     <?php 
@@ -76,9 +76,11 @@ $this->beginContent('@frontend/views/layouts/_clear.php');
     ]); ?>
     <?php NavBar::end(); ?>
 
-    <div class="col-lg-2 col-md-1 hidden-sm hidden-xs l-side-content"   style="background-color:#456">Left</div>
-    <div class="col-lg-8 col-md-10 col-sm-12 cols-xs-12 m-content"      style="background-color:#567"><?php echo $content ?></div>
-    <div class="col-lg-2 col-md-1 hidden-sm hidden-xs r-side-content"   style="background-color:#789">Right</div>
+    <div class="content-container">
+        <div class="col-lg-2 col-md-1 hidden-sm hidden-xs l-side-content"       ></div>
+        <div class="col-lg-8 col-md-10 col-sm-12 cols-xs-12 m-content alpha30"  ><?php echo $content ?></div>
+        <div class="col-lg-2 col-md-1 hidden-sm hidden-xs r-side-content"       ></div>
+    </div>
 
 </div>
 
