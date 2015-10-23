@@ -31,16 +31,17 @@ $this->beginContent('@frontend/views/layouts/_clear.php');
         'options' => ['class' => 'navbar-nav'],
         'items'   => [
             ['label' => Yii::t('frontend', 'Home'),         'url' => ['/']],
-            // ['label' => Yii::t('frontend', 'Home'),      'url' => ['/site/index']],
-            // ['label' => Yii::t('frontend', 'About'),     'url' => ['/page/view', 'slug'=>'about']],
-            // ['label' => Yii::t('frontend', 'Articles'),  'url' => ['/article/index']],
-            ['label' => Yii::t('frontend', 'Episodes'),     'url' => ['/article/index?category_id=1']],
+            ['label' => Yii::t('frontend', 'Comic'),        'url' => ['/article/index?category_id=1']],
             ['label' => Yii::t('frontend', 'Characters'),   'url' => ['/article/index?category_id=2']],
             ['label' => Yii::t('frontend', 'Universe'),     'url' => ['/article/index?category_id=3']],
             ['label' => Yii::t('frontend', 'Story'),        'url' => ['/article/index?category_id=4']],
             ['label' => Yii::t('frontend', 'Film'),         'url' => ['/article/index?category_id=5']],
             ['label' => Yii::t('frontend', 'Team'),         'url' => ['/article/index?category_id=6']],
             ['label' => Yii::t('frontend', 'Contact'),      'url' => ['/site/contact']],
+
+            // ['label' => Yii::t('frontend', 'Home'),      'url' => ['/site/index']],
+            // ['label' => Yii::t('frontend', 'About'),     'url' => ['/page/view', 'slug'=>'about']],
+            // ['label' => Yii::t('frontend', 'Articles'),  'url' => ['/article/index']],
             // ['label' => Yii::t('frontend', 'Signup'),    'url' => ['/user/sign-in/signup'], 'visible'=>Yii::$app->user->isGuest],
             // ['label' => Yii::t('frontend', 'Login'),     'url' => ['/user/sign-in/login'], 'visible'=>Yii::$app->user->isGuest],
             /* [
