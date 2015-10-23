@@ -13,7 +13,7 @@ $this->beginContent('@frontend/views/layouts/_clear.php');
 ?>
 <div class="container-fluid wrap">
 
-    <div class="banner-container hidden-xs">
+    <div class="banner-container hidden-xs banner-container">
         <div class="col-lg-3 hidden-md hidden-sm hidden-xs   l-side-banner"></div>
         <div class="col-lg-6 col-md-12 col-sm-12 m-banner">
             <!-- <img src="<?= $piecesAsset->baseUrl; ?>/images/top-banner-name.png" class="img-responsive" alt="Pieces" /> -->
@@ -25,11 +25,12 @@ $this->beginContent('@frontend/views/layouts/_clear.php');
     NavBar::begin([
         // 'brandLabel' => Yii::$app->name,
         // 'brandUrl'   => Yii::$app->homeUrl,
-        'options'    => ['class' => 'navbar-inverse'],
+        'options'    => ['class' => 'navbar-inverse center'],
     ]);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav'],
-        'items' => [
+        'items'   => [
+            ['label' => Yii::t('frontend', 'Home'),         'url' => ['/']],
             // ['label' => Yii::t('frontend', 'Home'),      'url' => ['/site/index']],
             // ['label' => Yii::t('frontend', 'About'),     'url' => ['/page/view', 'slug'=>'about']],
             // ['label' => Yii::t('frontend', 'Articles'),  'url' => ['/article/index']],

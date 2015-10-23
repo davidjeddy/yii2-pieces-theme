@@ -3,9 +3,15 @@
  */
 
 /* global */
+
+@font-face {
+    font-family: 'Necrotype';
+    src: url('../font/Necrotype.ttf');
+}
+
 body {
     background-image: url(../images/body-bkg.png);
-    color: #999;
+    color           : #777;
 }
 
 .container-fluid {
@@ -60,6 +66,13 @@ body {
     margin-bottom      : 0px; 
 }
 
+ul#w1.navbar-nav.nav li a {
+    color      : #cb0202;
+    font       : bold;
+    font-family: 'Necrotype';
+    font-size  : 32px; 
+    text-shadow: 0px 0px 15px #000000;
+}
 /* content */
 
 .breadcrumb {
@@ -84,7 +97,6 @@ ul.breadcrumb li.active {
     /* height          : 100%;
     min-height      : 100%; */
     min-height: 1024px;
-
 }
 
 .m-content {
@@ -106,6 +118,7 @@ ul.breadcrumb li.active {
 }
 
 /* specials */
+
 .alpha30 {
     /* Fallback for web browsers that don't support RGBa */
     background-color: rgb(0, 0, 0);
