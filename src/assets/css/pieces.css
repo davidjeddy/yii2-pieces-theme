@@ -6,12 +6,13 @@
 
 @font-face {
     color      : #a94442;
-    font-family: 'Necrotype';
-    src        : url('../font/Necrotype.ttf');
+    font-family: '1942';
+    src        : url('../font/1942.ttf');
 }
 
 body {
     background-attachment: fixed;
+    background-color     : #000;
     background-image     : url(../images/body-bkg.png);
     background-position  : center;
     background-repeat    : no-repeat;
@@ -34,7 +35,7 @@ img {
     border-radius   : 4px;
     color           : #999;
     display         : block;
-    font-family     : 'Necrotype';
+    font-family     : '1942';
     font-size       : 18px;
     line-height     : 1.42857;
     padding         : 6px 12px;
@@ -113,11 +114,12 @@ img {
 }
 
 .navbar-nav.nav li a {
-    color      : #a94442;
+    color      : #cb2220;
     font       : bold;
-    font-family: 'Necrotype';
-    font-size  : 32px; 
+    font-family: '1942';
+    font-size  : 28px; 
     text-shadow: 0px 0px 5px #000, 0px 0px 10px #000, 0px 0px 15px #000, 0px 0px 15px #000;
+    /* -webkit-text-stroke: 1px #000; */
 }
 
 /* content */
