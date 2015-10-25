@@ -19,6 +19,10 @@ body {
     color                : #999;
 }
 
+h1, h2, h3, h4, h5, h6, p, div, span, .lead {
+    font-family     : '1942';
+}
+
 img {
     display: block;
     height: auto;

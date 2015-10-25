@@ -30,7 +30,7 @@ $this->beginContent('@frontend/views/layouts/_clear.php');
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav'],
         'items'   => [
-            ['label' => Yii::t('frontend', 'Home'),         'url' => ['/']],
+            ['label' => Yii::t('frontend', 'Home'),         'url' => ['/site/index']],
             ['label' => Yii::t('frontend', 'Comic'),        'url' => ['/article/index?category_id=1']],
             ['label' => Yii::t('frontend', 'Characters'),   'url' => ['/article/index?category_id=2']],
             ['label' => Yii::t('frontend', 'Universe'),     'url' => ['/article/index?category_id=3']],
