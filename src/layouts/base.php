@@ -21,6 +21,9 @@ $this->beginContent('@frontend/views/layouts/_clear.php');
         <div class="col-lg-3 hidden-md hidden-sm hidden-xs   r-side-banner"></div>
     </div>
 
+    <div class="navbar-text visible-xs-inline-block">
+        <img src="<?= $piecesAsset->baseUrl; ?>/images/top-banner-name.png" class="img-responsive" alt="Pieces" />
+    </div>
     <?php 
     NavBar::begin([
         // 'brandLabel' => Yii::$app->name,
