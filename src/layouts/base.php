@@ -35,48 +35,12 @@ $this->beginContent('@frontend/views/layouts/_clear.php');
         'items'   => [
             ['label' => Yii::t('frontend', 'Home'),         'url' => ['/site/index']],
             ['label' => Yii::t('frontend', 'Comic'),        'url' => ['/article/index?category_id=1']],
-            ['label' => Yii::t('frontend', 'Characters'),   'url' => ['/article/index?category_id=2']],
-            ['label' => Yii::t('frontend', 'Universe'),     'url' => ['/article/index?category_id=3']],
-            ['label' => Yii::t('frontend', 'Story'),        'url' => ['/article/index?category_id=4']],
-            ['label' => Yii::t('frontend', 'Film'),         'url' => ['/article/index?category_id=5']],
-            ['label' => Yii::t('frontend', 'Team'),         'url' => ['/article/index?category_id=6']],
+            ['label' => Yii::t('frontend', 'Characters'),   'url' => ['/article/characters']],
+            ['label' => Yii::t('frontend', 'Universe'),     'url' => ['/article/pieces-universe']],
+            ['label' => Yii::t('frontend', 'Story'),        'url' => ['/article/pieces-of-the-past']],
+            ['label' => Yii::t('frontend', 'Film'),         'url' => ['/article/rticle/the-film']],
+            ['label' => Yii::t('frontend', 'Team'),         'url' => ['/article/article/sick-minds']],
             ['label' => Yii::t('frontend', 'Contact'),      'url' => ['/site/contact']],
-
-            // ['label' => Yii::t('frontend', 'Home'),      'url' => ['/site/index']],
-            // ['label' => Yii::t('frontend', 'About'),     'url' => ['/page/view', 'slug'=>'about']],
-            // ['label' => Yii::t('frontend', 'Articles'),  'url' => ['/article/index']],
-            // ['label' => Yii::t('frontend', 'Signup'),    'url' => ['/user/sign-in/signup'], 'visible'=>Yii::$app->user->isGuest],
-            // ['label' => Yii::t('frontend', 'Login'),     'url' => ['/user/sign-in/login'], 'visible'=>Yii::$app->user->isGuest],
-            /* [
-                'label' => Yii::$app->user->isGuest ? '' : Yii::$app->user->identity->getPublicIdentity(),
-                'visible'=>!Yii::$app->user->isGuest,
-                'items'=>[
-                    [
-                        'label' => Yii::t('frontend', 'Settings'),
-                        'url' => ['/user/default/index']
-                    ],
-                    [
-                        'label' => Yii::t('frontend', 'Backend'),
-                        'url' => Yii::getAlias('@backendUrl'),
-                        'visible'=>Yii::$app->user->can('manager')
-                    ],
-                    [
-                        'label' => Yii::t('frontend', 'Logout'),
-                        'url' => ['/user/sign-in/logout'],
-                        'linkOptions' => ['data-method' => 'post']
-                    ]
-                ]
-            ],
-            [
-                'label'=>Yii::t('frontend', 'Language'),
-                'items'=>array_map(function ($code) {
-                    return [
-                        'label' => Yii::$app->params['availableLocales'][$code],
-                        'url' => ['/site/set-locale', 'locale'=>$code],
-                        'active' => Yii::$app->language === $code
-                    ];
-                }, array_keys(Yii::$app->params['availableLocales']))
-            ] */
         ]
     ]); ?>
     <?php NavBar::end(); ?>
