@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 
+use cybercog\yii\googleanalytics\widgets\GATracking;
+
 /* @var $this \yii\web\View */
 /* @var $content string */
 
