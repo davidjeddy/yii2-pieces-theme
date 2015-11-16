@@ -39,7 +39,7 @@ $this->beginContent('@frontend/views/layouts/_clear.php');
             ['label' => Yii::t('frontend', 'Universe'),     'url' => ['/article/pieces-universe']],
             ['label' => Yii::t('frontend', 'Story'),        'url' => ['/article/pieces-of-the-past']],
             ['label' => Yii::t('frontend', 'Film'),         'url' => ['/article/the-film']],
-            ['label' => Yii::t('frontend', 'Team'),         'url' => ['/article/article/sick-minds']],
+            ['label' => Yii::t('frontend', 'Team'),         'url' => ['/article/sick-minds']],
             ['label' => Yii::t('frontend', 'Contact'),      'url' => ['/site/contact']],
         ]
     ]); ?>
