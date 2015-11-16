@@ -9,9 +9,13 @@
             "email": "me@davidjdeddy.com"
         }
     ],
+    "require": {
+        "cybercog/yii2-google-analytics": "~0.2"
+    },
     "autoload": {
         "psr-4": {
             "davidjeddy\\pieces\\": "/src"
         }
     }
 }
+

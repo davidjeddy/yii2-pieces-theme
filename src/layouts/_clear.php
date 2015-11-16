@@ -41,6 +41,8 @@ $piecesAsset = \davidjeddy\pieces\PiecesAsset::register($this);
         <meta name="msapplication-TileImage"            content="<?= $piecesAsset->baseUrl; ?>/favicon/ms-icon-144x144.png"/ß>
 
         <meta name="theme-color"                        content="#000000" />
+
+        <?php echo GATracking::widget(['trackingId' => 'UA-70123684-1']); ?>
     </head>
     <body>
         <?php $this->beginBody() ?>
