@@ -3,6 +3,7 @@
  */
 // create array with image items
 var imageArray = [
+    // character page image map
     'http://storage.pieces-compendium.com/source/1/characterImageMap/0.png',
     'http://storage.pieces-compendium.com/source/1/characterImageMap/1.png',
     'http://storage.pieces-compendium.com/source/1/characterImageMap/2.png',
@@ -17,9 +18,18 @@ var imageArray = [
     'http://storage.pieces-compendium.com/source/1/characterImageMap/11.png',
     'http://storage.pieces-compendium.com/source/1/characterImageMap/12.png',
     'http://storage.pieces-compendium.com/source/1/characterImageMap/13.png',
+
+    // comic page image map
+    'http://storage.pieces-compendium.com/source/1/comicImageMap/0.png',
+    'http://storage.pieces-compendium.com/source/1/comicImageMap/1.png',
+    'http://storage.pieces-compendium.com/source/1/comicImageMap/2.png',
+    'http://storage.pieces-compendium.com/source/1/comicImageMap/3.png',
+    'http://storage.pieces-compendium.com/source/1/comicImageMap/4.png',
+    'http://storage.pieces-compendium.com/source/1/comicImageMap/5.png'
 ];
 
-// why does including these result in a fast DOM changes? dunno, but leave these here.
+// character page image map
+// TODO why does including these result in a fast DOM changes? dunno, but leave these here.
 Image0 = new Image(800,800);
 Image0.src = 'http://storage.pieces-compendium.com/source/1/characterImageMap/0.png';
 
@@ -61,6 +71,25 @@ Image12.src = 'http://storage.pieces-compendium.com/source/1/characterImageMap/1
 
 Image13 = new Image(800,800);
 Image13.src = 'http://storage.pieces-compendium.com/source/1/characterImageMap/13.png';
+
+// comic page image map
+Image14 = new Image(800,3150);
+Image14.src = 'http://storage.pieces-compendium.com/source/1/comicImageMap/0.png';
+
+Image15 = new Image(800,3150);
+Image15.src = 'http://storage.pieces-compendium.com/source/1/comicImageMap/1.png';
+
+Image16 = new Image(800,3150);
+Image16.src = 'http://storage.pieces-compendium.com/source/1/comicImageMap/2.png';
+
+Image17 = new Image(800,3150);
+Image17.src = 'http://storage.pieces-compendium.com/source/1/comicImageMap/3.png';
+
+Image18 = new Image(800,3150);
+Image18.src = 'http://storage.pieces-compendium.com/source/1/comicImageMap/4.png';
+
+Image19 = new Image(800,3150);
+Image19.src = 'http://storage.pieces-compendium.com/source/1/comicImageMap/5.png';
 
 /**
  * Swap the DOM.character.src value
