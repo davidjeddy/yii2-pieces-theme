@@ -24,7 +24,7 @@ $this->beginContent('@frontend/views/layouts/_clear.php');
     <div class="navbar-text visible-xs-inline-block">
         <img src="<?= $piecesAsset->baseUrl; ?>/images/top-banner-name.png" class="img-responsive" alt="Pieces" />
     </div>
-    <?php 
+    <?php
     NavBar::begin([
         // 'brandLabel' => Yii::$app->name,
         // 'brandUrl'   => Yii::$app->homeUrl,
@@ -34,7 +34,7 @@ $this->beginContent('@frontend/views/layouts/_clear.php');
         'options' => ['class' => 'navbar-nav'],
         'items'   => [
             ['label' => Yii::t('frontend', 'Home'),         'url' => ['/site/index']],
-            ['label' => Yii::t('frontend', 'Comic'),        'url' => ['/article/index?category_id=1']],
+            ['label' => Yii::t('frontend', 'Comic'),        'url' => ['/article/comic']],
             ['label' => Yii::t('frontend', 'Characters'),   'url' => ['/article/characters']],
             ['label' => Yii::t('frontend', 'Universe'),     'url' => ['/article/pieces-universe']],
             ['label' => Yii::t('frontend', 'Story'),        'url' => ['/article/pieces-of-the-past']],
