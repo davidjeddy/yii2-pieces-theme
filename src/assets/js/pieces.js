@@ -3,6 +3,7 @@
  */
 // create array with image items
 var imageArray = [
+    // character page image map
     'http://storage.pieces-compendium.com/source/1/characterImageMap/0.png',
     'http://storage.pieces-compendium.com/source/1/characterImageMap/1.png',
     'http://storage.pieces-compendium.com/source/1/characterImageMap/2.png',
@@ -17,9 +18,18 @@ var imageArray = [
     'http://storage.pieces-compendium.com/source/1/characterImageMap/11.png',
     'http://storage.pieces-compendium.com/source/1/characterImageMap/12.png',
     'http://storage.pieces-compendium.com/source/1/characterImageMap/13.png',
+
+    // comic page image map
+    'http://storage.pieces-compendium.com/source/1/comicImageMap/14.png',
+    'http://storage.pieces-compendium.com/source/1/comicImageMap/15.png',
+    'http://storage.pieces-compendium.com/source/1/comicImageMap/16.png',
+    'http://storage.pieces-compendium.com/source/1/comicImageMap/17.png',
+    'http://storage.pieces-compendium.com/source/1/comicImageMap/18.png',
+    'http://storage.pieces-compendium.com/source/1/comicImageMap/19.png'
 ];
 
-// why does including these result in a fast DOM changes? dunno, but leave these here.
+// character page image map
+// TODO why does including these result in a fast DOM changes? dunno, but leave these here.
 Image0 = new Image(800,800);
 Image0.src = 'http://storage.pieces-compendium.com/source/1/characterImageMap/0.png';
 
@@ -62,12 +72,31 @@ Image12.src = 'http://storage.pieces-compendium.com/source/1/characterImageMap/1
 Image13 = new Image(800,800);
 Image13.src = 'http://storage.pieces-compendium.com/source/1/characterImageMap/13.png';
 
+// comic page image map
+Image14 = new Image(800,3150);
+Image14.src = 'http://storage.pieces-compendium.com/source/1/comicImageMap/14.png';
+
+Image15 = new Image(800,3150);
+Image15.src = 'http://storage.pieces-compendium.com/source/1/comicImageMap/15.png';
+
+Image16 = new Image(800,3150);
+Image16.src = 'http://storage.pieces-compendium.com/source/1/comicImageMap/16.png';
+
+Image17 = new Image(800,3150);
+Image17.src = 'http://storage.pieces-compendium.com/source/1/comicImageMap/17.png';
+
+Image18 = new Image(800,3150);
+Image18.src = 'http://storage.pieces-compendium.com/source/1/comicImageMap/18.png';
+
+Image19 = new Image(800,3150);
+Image19.src = 'http://storage.pieces-compendium.com/source/1/comicImageMap/19.png';
+
 /**
  * Swap the DOM.character.src value
  */
 function show(num) {
-    console.log(num);
-    document.characters.src = imageArray[num];
-    console.log(document.characters.src);
+    var imageMap = document.querySelector('article.article-item > p >img');
+    imageMap.src = imageArray[num];
+    console.log(imageMap.src);
     return true;
 }
