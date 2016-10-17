@@ -24,7 +24,7 @@ $this->beginContent('@frontend/views/layouts/_clear.php');
     <div class="navbar-text visible-xs-inline-block">
         <img src="<?= $piecesAsset->baseUrl; ?>/images/top-banner-name.png" class="img-responsive" alt="Pieces" />
     </div>
-    <?php 
+    <?php
     NavBar::begin([
         // 'brandLabel' => Yii::$app->name,
         // 'brandUrl'   => Yii::$app->homeUrl,
@@ -43,11 +43,43 @@ $this->beginContent('@frontend/views/layouts/_clear.php');
             ['label' => Yii::t('frontend', 'Contact'),      'url' => ['/site/contact']],
         ]
     ]); ?>
+
     <?php NavBar::end(); ?>
 
+
     <div class="content-container">
-        <div class="col-lg-2 col-md-1 hidden-sm hidden-xs l-side-content"       ></div>
-        <div class="col-lg-8 col-md-10 col-sm-12 cols-xs-12 m-content alpha60"  ><?php echo $content ?></div>
+        <div class="col-lg-2 col-md-1 hidden-sm hidden-xs l-side-content">
+            <br/>
+            <!-- AddToAny BEGIN -->
+            <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                <a class="a2a_button_facebook"></a>
+                <a class="a2a_button_twitter"></a>
+                <a class="a2a_button_google_plus"></a>
+                <a class="a2a_button_email"></a>
+            </div>
+            <!-- AddToAny END -->
+        </div>
+        <div class="col-lg-8 col-md-10 col-sm-12 cols-xs-12 m-content alpha60">
+
+            <div class="hidden-xl hidden-lg hidden-medium col-sm-12">
+                <div class="col-sm-4 col-xs-2"></div>
+                <div class="col-sm-4 col-xs-8">
+
+                    <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                        <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                        <a class="a2a_button_facebook"></a>
+                        <a class="a2a_button_twitter"></a>
+                        <a class="a2a_button_google_plus"></a>
+                        <a class="a2a_button_email"></a>
+                    </div>
+                    <!-- AddToAny END -->
+                </div>
+                <div class="col-sm-4 col-xs-2"></div>
+            </div>
+
+            <?php echo $content ?>
+        </div>
         <div class="col-lg-2 col-md-1 hidden-sm hidden-xs r-side-content"       ></div>
     </div>
 
@@ -61,3 +93,12 @@ $this->beginContent('@frontend/views/layouts/_clear.php');
 </footer>
 
 <?php $this->endContent() ?>
+
+<?php // TODO move this to a AppAsset package ?>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<script>
+    var a2a_config = a2a_config || {};
+    a2a_config.icon_color   = "#660000";
+    a2a_config.url          = "<?php echo \Yii::$app->request->url; ?>";
+    a2a_config.title        = "<?php echo $this->title; ?>";
+</script>
