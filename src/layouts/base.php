@@ -87,7 +87,7 @@ $this->beginContent('@frontend/views/layouts/_clear.php');
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; <?php echo \Yii::$app->params['companyName']; ?>, <?php echo date('Y') ?></p>
+        <p class="pull-left">&copy; <?php echo env('APP_NAME'); ?>, <?php echo date('Y') ?></p>
         <p class="pull-right"><?php //echo Yii::powered() ?></p>
     </div>
 </footer>

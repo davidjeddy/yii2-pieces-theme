@@ -5,7 +5,7 @@ namespace davidjeddy\pieces;
 use yii\web\AssetBundle;
 
 /**
- * 
+ *
  * @author David Eddy <me@davidjeddy.com>
  * @since 0.0.5
  */

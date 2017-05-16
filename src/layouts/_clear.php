@@ -8,7 +8,6 @@ use cybercog\yii\googleanalytics\widgets\GATracking;
 /* @var $content string */
 
 \frontend\assets\FrontendAsset::register($this);
-
 $piecesAsset = \davidjeddy\pieces\PiecesAsset::register($this);
 
 ?>
@@ -44,7 +43,9 @@ $piecesAsset = \davidjeddy\pieces\PiecesAsset::register($this);
 
         <meta name="theme-color"                        content="#000000" />
 
-        <?php echo GATracking::widget(['trackingId' => 'UA-70123684-1']); ?>
+        <?php if (env('GOOGLE_TRACKING_CODE')) {
+            echo GATracking::widget(['trackingId' => env('GOOGLE_TRACKING_CODE')]);
+        } ?>
     </head>
     <body>
         <?php $this->beginBody() ?>
