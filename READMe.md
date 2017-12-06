@@ -1,7 +1,7 @@
 yii2-pieces-theme
 =========
 
-yii2 Custom Theme for pieces-compendium.com
+Yii2 Custom Theme for pieces-compendium.com
 
 
 Credit
@@ -10,25 +10,14 @@ Credit
 Based on https://github.com/sheillendra/yii2-theme
 
 
-
 Installation
 ------------
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
-Either run
+Either run `php composer.phar require --prefer-dist davidjeddy/yii2-pieces-theme "*"`
 
-```
-php composer.phar require --prefer-dist davidjeddy/yii2-pieces-theme "*"
-```
-
-or add
-
-```
-"davidjeddy/yii2-pieces-theme": "*"
-```
-
-to the require section of your `composer.json` file.
+or add `"davidjeddy/yii2-pieces-theme": "*"` to the require section of your `composer.json` file and execute and update.
 
 
 Application
@@ -36,17 +25,16 @@ Application
 
 Change your application config (backend or frontend)
 ```
-'view'=>[
-	'theme' => [
-		'class'=>'davidjeddy\theme\components\Theme',
-		'active'=>'theme_1',
-		'pathMap' => [ 
-			'@app/views' => [ 
-				'@webroot/themes/theme_1/views',
-				...
-			]
-		],
-	],
+    'components' => [
+    ...
+        'assetManager' => ['linkAssets' => true],
+        'view' => [
+            'theme' => [
+                'pathMap' => [
+                    '@app/views' => '@vendor/davidjeddy/yii2-pieces-theme/src/views',
+                ],
+            ],
+        ],
 	...
 ],
 ```
