@@ -69,7 +69,6 @@ if (storageHostURL) {
     function show(num) {
         var imageMap = document.querySelector('article.article-item > p >img');
         imageMap.src = imageArray[num];
-        console.log(imageMap.src);
         return true;
     }
 }
