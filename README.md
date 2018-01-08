@@ -1,20 +1,20 @@
-#yii2-pieces-theme
+# Yii2 Pieces Compendium Theme
 
 ## About
 Yii2 Custom Theme for pieces-compendium.com
 
 ## Badges
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/e45f66cb-8718-4dee-9597-d40b745aeb29/mini.png)](https://insight.sensiolabs.com/projects/e45f66cb-8718-4dee-9597-d40b745aeb29)
-[![Latest Stable Version](https://poser.pugx.org/davidjeddy/yii2-pieces-them/v/stable)](https://packagist.org/packages/davidjeddy/yii2-pieces-them)
-[![Total Downloads](https://poser.pugx.org/davidjeddy/yii2-pieces-them/downloads)](https://packagist.org/packages/davidjeddy/yii2-pieces-them)
-[![Latest Unstable Version](https://poser.pugx.org/davidjeddy/yii2-pieces-them/v/unstable)](https://packagist.org/packages/davidjeddy/yii2-pieces-them)
-[![License](https://poser.pugx.org/davidjeddy/yii2-pieces-them/license)](https://packagist.org/packages/davidjeddy/yii2-pieces-them)
-[![Monthly Downloads](https://poser.pugx.org/davidjeddy/yii2-pieces-them/d/monthly)](https://packagist.org/packages/davidjeddy/yii2-pieces-them)
-[![Daily Downloads](https://poser.pugx.org/davidjeddy/yii2-pieces-them/d/daily)](https://packagist.org/packages/davidjeddy/yii2-pieces-them)
+--need SensioLabs tests setup--
+[![Latest Stable Version](https://poser.pugx.org/davidjeddy/yii2-pieces-theme/v/stable)](https://packagist.org/packages/davidjeddy/yii2-pieces-them)
+[![Total Downloads](https://poser.pugx.org/davidjeddy/yii2-pieces-theme/downloads)](https://packagist.org/packages/davidjeddy/yii2-pieces-them)
+[![Latest Unstable Version](https://poser.pugx.org/davidjeddy/yii2-pieces-theme/v/unstable)](https://packagist.org/packages/davidjeddy/yii2-pieces-them)
+[![License](https://poser.pugx.org/davidjeddy/yii2-pieces-theme/license)](https://packagist.org/packages/davidjeddy/yii2-pieces-them)
+[![Monthly Downloads](https://poser.pugx.org/davidjeddy/yii2-pieces-theme/d/monthly)](https://packagist.org/packages/davidjeddy/yii2-pieces-them)
+[![Daily Downloads](https://poser.pugx.org/davidjeddy/yii2-pieces-theme/d/daily)](https://packagist.org/packages/davidjeddy/yii2-pieces-them)
 
 
 ## Credit
-Based on https://github.com/sheillendra/yii2-theme
+Based on [https://github.com/sheillendra/yii2-theme](https://github.com/sheillendra/yii2-theme).
 
 ## Installing
 
