@@ -44,8 +44,12 @@ $piecesAsset = \davidjeddy\pieces\PiecesAsset::register($this);
         <meta name="theme-color"                        content="#000000" />
 
         <?php if (env('GOOGLE_TRACKING_CODE')) {
-            echo GATracking::widget(['trackingId' => env('GOOGLE_TRACKING_CODE')]);
+            echo GATracking::widget(['trackingId' => getenv('GOOGLE_TRACKING_CODE')]);
         } ?>
+        <script language="JavaScript1.3">
+            // set storage base URL
+            var storageHostURL = '<?php echo getenv('STORAGE_HOST_INFO'); ?>';
+        </script>
     </head>
     <body>
         <?php $this->beginBody() ?>
