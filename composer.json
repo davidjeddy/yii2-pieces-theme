@@ -1,7 +1,7 @@
 {
     "name": "davidjeddy/yii2-pieces-theme",
     "description": "Pieces Theme",
-    "keywords": ["theme", "deavidjeddy", "yii2"],
+    "keywords": ["theme", "yii2"],
     "type": "theme",
     "authors": [
         {
@@ -11,6 +11,7 @@
     ],
     "require": {
         "cybercog/yii2-google-analytics": "~0.2",
+        "vlucas/phpdotenv": "^2.0",
         "yiisoft/yii2": "^2.0.0"
     },
     "require-dev": {
