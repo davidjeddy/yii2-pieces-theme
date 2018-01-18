@@ -36,7 +36,7 @@ use dosamigos\disqus\Comments;
             ->one();
 
         // does the current category have children AND
-        // is the current categoery a child of 'comic'? If yes pagination per category_id, else skip paginateion
+        // is the current category a child of 'comic'? If yes pagination per category_id, else skip pagination
         if ($parent_cat_id) {
             $prev = $model->getNextOrPrev($model->category_id, $model->published_at, 'DESC', 'published_at');
             $next = $model->getNextOrPrev($model->category_id, $model->published_at, 'ASC', 'published_at');
