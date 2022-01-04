@@ -3,6 +3,7 @@
     "description": "Pieces Theme",
     "keywords": ["theme", "yii2"],
     "type": "theme",
+    "license": "MIT",
     "authors": [
         {
             "name": "David J Eddy",
