@@ -4,7 +4,6 @@
 Yii2 Custom Theme for pieces-compendium.com
 
 ## Badges
---need SensioLabs tests setup--
 [![Latest Stable Version](https://poser.pugx.org/davidjeddy/yii2-pieces-theme/v/stable)](https://packagist.org/packages/davidjeddy/yii2-pieces-them)
 [![Total Downloads](https://poser.pugx.org/davidjeddy/yii2-pieces-theme/downloads)](https://packagist.org/packages/davidjeddy/yii2-pieces-them)
 [![Latest Unstable Version](https://poser.pugx.org/davidjeddy/yii2-pieces-theme/v/unstable)](https://packagist.org/packages/davidjeddy/yii2-pieces-them)
